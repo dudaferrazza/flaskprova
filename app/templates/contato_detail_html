@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+ {% block content %}
+
+ <div class="container">
+    {% include 'nave.html' %}
+    
+  <div class="row">
+    
+    <div class= "col-md-6">
+        Nome:
+        <input type="text" values="{{obj.nome}}"class="form-control bg-secondary text-white"readonly>
+    </div>
+
+    </div>
+    <div class= "col-md-6">
+        email:
+        <input type="text" values="{{obj.email}}"class="form-control bg-secondary text-white"readonly>
+    </div>
+
+</div>
+<div class= "col-md-6">
+    assunto:
+    <input type="text" values="{{obj.assunto}}"class="form-control bg-secondary text-white"readonly>
+</div>
+
+</div>
+<div class= "col-md-6">
+    mensagem:
+    <input type="text" class="form-control bg-secondary text-white" readonly>{{obj.mensagem}}</textarea>
+</div>
+
+
+
+</div>
+
+ {% endblock %}
